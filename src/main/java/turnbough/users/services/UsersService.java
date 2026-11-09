@@ -7,11 +7,24 @@ import turnbough.users.repositories.UsersRepository;
 @Service
 public class UsersService
 {
+	/*
+	* Variables
+	 */
 	UsersRepository usersRepository;
 
+	/*
+	* Constructors
+	 */
+	public UsersService(UsersRepository usersRepository)
+	{
+		this.usersRepository = usersRepository;
+	}
+
+	/*
+	* Getters
+	 */
 	public User getUser(String username)
 	{
-		//TODO: Query database for username.
-		return null;
+		return usersRepository.findByName(username);
 	}
 }
