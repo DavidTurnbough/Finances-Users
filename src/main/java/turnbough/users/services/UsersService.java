@@ -4,6 +4,8 @@ import org.springframework.stereotype.Service;
 import turnbough.users.models.User;
 import turnbough.users.repositories.UsersRepository;
 
+import java.util.List;
+
 @Service
 public class UsersService
 {
@@ -26,5 +28,11 @@ public class UsersService
 	public User getUser(String username)
 	{
 		return usersRepository.findByName(username);
+	}
+
+	public List<User> getAllUsers()
+	{
+		//TODO: Implement get all users
+		return null;
 	}
 }
