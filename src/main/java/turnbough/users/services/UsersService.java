@@ -1,5 +1,6 @@
 package turnbough.users.services;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import turnbough.users.models.User;
 import turnbough.users.repositories.UsersRepository;
@@ -33,6 +34,12 @@ public class UsersService
 	public List<User> getAllUsers()
 	{
 		//TODO: Implement get all users
+		return null;
+	}
+
+	public ResponseEntity<User> deleteUserByName(String username)
+	{
+		//TODO: Implement delete user by name
 		return null;
 	}
 }
