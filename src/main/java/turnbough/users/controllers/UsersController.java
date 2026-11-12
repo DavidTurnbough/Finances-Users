@@ -1,5 +1,6 @@
 package turnbough.users.controllers;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 import turnbough.users.models.User;
 import turnbough.users.services.UsersService;
@@ -30,6 +31,11 @@ public class UsersController
 	public List<User> getAllUsers()
 	{
 		return usersService.getAllUsers();
+	}
+
+	public ResponseEntity<User> deleteUserByName(String username)
+	{
+		return usersService.deleteUserByName(username);
 	}
 
 
