@@ -38,5 +38,9 @@ public class UsersController
 		return usersService.deleteUserByName(username);
 	}
 
+	public ResponseEntity<User> addUser(User user)
+	{
+		return usersService.addUser(user);
+	}
 
 }

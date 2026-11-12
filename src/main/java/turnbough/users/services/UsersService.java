@@ -42,4 +42,10 @@ public class UsersService
 		//TODO: Implement delete user by name
 		return null;
 	}
+
+	public ResponseEntity<User> addUser(User user)
+	{
+		//TODO: Implement add user
+		return null;
+	}
 }
