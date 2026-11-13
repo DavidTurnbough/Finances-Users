@@ -37,15 +37,21 @@ public class UsersService
 		return null;
 	}
 
-	public ResponseEntity<User> deleteUserByName(String username)
-	{
-		//TODO: Implement delete user by name
-		return null;
-	}
-
 	public ResponseEntity<User> addUser(User user)
 	{
 		//TODO: Implement add user
+		return null;
+	}
+
+	public ResponseEntity<User> updateUser(User user)
+	{
+		//TODO: Implement update user
+		return null;
+	}
+
+	public ResponseEntity<User> deleteUserByName(String username)
+	{
+		//TODO: Implement delete user by name
 		return null;
 	}
 }
