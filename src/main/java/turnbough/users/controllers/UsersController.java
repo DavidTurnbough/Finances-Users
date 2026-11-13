@@ -23,6 +23,9 @@ public class UsersController
 		this.usersService = usersService;
 	}
 
+	/*
+	* Get Mapping
+	 */
 	public User getUser(String username)
 	{
 		return usersService.getUser(username);
@@ -33,14 +36,24 @@ public class UsersController
 		return usersService.getAllUsers();
 	}
 
+	public ResponseEntity<User> addUser(User user)
+	{
+		return usersService.addUser(user);
+	}
+
+	public ResponseEntity<User> updateUser(User user)
+	{
+		return usersService.updateUser(user);
+	}
+
+	/*
+	* Delete Mapping
+	 */
 	public ResponseEntity<User> deleteUserByName(String username)
 	{
 		return usersService.deleteUserByName(username);
 	}
 
-	public ResponseEntity<User> addUser(User user)
-	{
-		return usersService.addUser(user);
-	}
+
 
 }
