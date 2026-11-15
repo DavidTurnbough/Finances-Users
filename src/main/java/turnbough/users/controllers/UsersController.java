@@ -57,6 +57,11 @@ public class UsersController
 		return usersService.updatePassword(user);
 	}
 
+	public ResponseEntity<User> updateEmail(User user)
+	{
+		return usersService.updateEmail(user);
+	}
+
 	/*
 	* Delete Mapping
 	 */
