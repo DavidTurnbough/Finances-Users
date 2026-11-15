@@ -57,5 +57,13 @@ public class UsersService
 
 	public ResponseEntity<User> updatePassword(User user)
 	{
+		//TODO: Implement update password
+		return null;
+	}
+
+	public ResponseEntity<User> updateEmail(User user)
+	{
+		//TODO: Implement update email
+		return null;
 	}
 }
