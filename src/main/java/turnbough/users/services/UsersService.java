@@ -54,4 +54,8 @@ public class UsersService
 		//TODO: Implement delete user by name
 		return null;
 	}
+
+	public ResponseEntity<User> updatePassword(User user)
+	{
+	}
 }
