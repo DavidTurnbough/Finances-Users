@@ -36,14 +36,25 @@ public class UsersController
 		return usersService.getAllUsers();
 	}
 
+	/*
+	* Post mapping
+	 */
 	public ResponseEntity<User> addUser(User user)
 	{
 		return usersService.addUser(user);
 	}
 
+	/*
+	* Put Mapping
+	 */
 	public ResponseEntity<User> updateUser(User user)
 	{
 		return usersService.updateUser(user);
+	}
+
+	public ResponseEntity<User> updatePassword(User user)
+	{
+		return usersService.updatePassword(user);
 	}
 
 	/*
