@@ -66,4 +66,10 @@ public class UsersService
 		//TODO: Implement update email
 		return null;
 	}
+
+	public ResponseEntity<User> updateRole(User user)
+	{
+		//TODO: Implement update role
+		return null;
+	}
 }
