@@ -62,6 +62,11 @@ public class UsersController
 		return usersService.updateEmail(user);
 	}
 
+	public ResponseEntity<User> updateRole(User user)
+	{
+		return usersService.updateRole(user);
+	}
+
 	/*
 	* Delete Mapping
 	 */
