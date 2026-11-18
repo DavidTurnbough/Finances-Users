@@ -72,4 +72,10 @@ public class UsersService
 		//TODO: Implement update role
 		return null;
 	}
+
+	public ResponseEntity<User> updateName(User user)
+	{
+		//TODO: Implement update name.
+		return null;
+	}
 }

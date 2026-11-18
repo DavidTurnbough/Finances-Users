@@ -52,6 +52,11 @@ public class UsersController
 		return usersService.updateUser(user);
 	}
 
+	public ResponseEntity<User> updateName(User user)
+	{
+		return usersService.updateName(user);
+	}
+
 	public ResponseEntity<User> updatePassword(User user)
 	{
 		return usersService.updatePassword(user);
