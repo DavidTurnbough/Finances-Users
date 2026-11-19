@@ -75,6 +75,8 @@ public class UsersController
 	/*
 	* Delete Mapping
 	 */
+
+
 	public ResponseEntity<User> deleteUserByName(String username)
 	{
 		return usersService.deleteUserByName(username);
