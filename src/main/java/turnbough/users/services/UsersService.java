@@ -39,8 +39,9 @@ public class UsersService
 
 	public ResponseEntity<User> addUser(User user)
 	{
-		//TODO: Implement add user
-		return null;
+		usersRepository.save(user);
+
+		return  ResponseEntity.ok(user);
 	}
 
 	public ResponseEntity<User> updateUser(User user)
