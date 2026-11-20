@@ -46,8 +46,9 @@ public class UsersService
 
 	public ResponseEntity<User> updateUser(User user)
 	{
-		//TODO: Implement update user
-		return null;
+		usersRepository.save(user);
+
+		return ResponseEntity.ok(user);
 	}
 
 	public ResponseEntity<User> deleteUserByName(String username)
