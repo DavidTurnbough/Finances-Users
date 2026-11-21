@@ -53,7 +53,7 @@ public class UsersService
 
 	public ResponseEntity<User> deleteUserByName(String username)
 	{
-		//TODO: Implement delete user by name
+		usersRepository.deleteByName(username);
 		return null;
 	}
 
